@@ -1,47 +1,47 @@
 
-HANGMANPICS = [r'''
+HANGMANPICS = ['''
   +---+
   |   |
       |
       |
       |
       |
-=========''', r'''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========''', r'''
+=========''', '''
   +---+
   |   |
   O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
   |   |
       |
       |
-=========''', r'''
+=========''', '''
   +---+
   |   |
   O   |
  /|   |
       |
       |
-=========''', r'''
+=========''', '''
   +---+
   |   |
   O   |
  /|\  |
       |
       |
-=========''', r'''
+=========''', '''
   +---+
   |   |
   O   |
  /|\  |
  /    |
       |
-=========''', r'''
+=========''', '''
   +---+
   |   |
   O   |
@@ -58,4 +58,3 @@ words = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
         'rhino salmon seal shark sheep skunk sloth snake spider '
         'stork swan tiger toad trout turkey turtle weasel whale wolf '
         'wombat zebra ').split()
- 
