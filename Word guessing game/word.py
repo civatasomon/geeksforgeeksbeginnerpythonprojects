@@ -15,12 +15,13 @@ while counter < ltr_count:
     sys.stdout.write(blanks)
     sys.stdout.write("\n\nGuess the letter: ")
     guessed_letter = str(input())
-    sys.stdout.write("\033[F\033[K\033[F\033[F\033[K\033[F\033[K")
     for idx in range(ltr_count):
         if guessed_letter == guess_word[idx]:
             blanks = blanks[:idx] + guessed_letter + blanks[idx + 1:]
     if blanks_prvs.count("_") == blanks.count("_"):
         counter += 1
     if blanks.count("_") == 0:
-        sys.stdout.write("You win!!")
+        sys.stdout.write("You win!!\n\033[4F\033[2K"+ guess_word + "\033[4E")
         break
+    sys.stdout.write("\033[F\033[2K\033[2F\033[2K\033[F\033[K")
+
