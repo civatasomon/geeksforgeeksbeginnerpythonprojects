@@ -5,7 +5,7 @@ import os
 repo_path = os.path.abspath("./8510732aa9a80a03c829b09f12e20d9c")
 if repo_path not in sys.path:
     sys.path.append(repo_path)
-from hangmanwordbank import HANGMANPICS, words
+from hangmanwordbank import HANGMANPICS, words #type: ignore
 
 alphabet = [["A", "B", "C", "D", "E", "F", "G"],
             ["H", "I", "J", "K", "L", "M", "N"],
