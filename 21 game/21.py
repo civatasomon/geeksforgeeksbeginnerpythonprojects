@@ -81,7 +81,7 @@ def wants():
         elif cevap == "n":
             return False
         else:
-            sys.stdout.write("y ya da n harflerinden birine tıklayın. y/n: ")
+            sys.stdout.write("Choose either 'y' or 'n'. y/n: ")
             sys.stdout.flush()
 
 while wants():
